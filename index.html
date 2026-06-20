@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🐍 Neon Snake Game</h1>
+    <div class="scoreboard">
+        <div class="score">Score: <span id="score">0</span></div>
+        <div class="score">Best: <span id="bestScore">0</span></div>
+    </div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id="status" class="status">Ready to play — press Start or use Space.</div>
+    <div class="controls">
+        <button id="startPauseBtn">Start</button>
+        <button id="restartBtn">Restart</button>
+    </div>
+    <div class="settings">
+        <label>
+            Difficulty:
+            <select id="difficultySelect">
+                <option value="120">Easy</option>
+                <option value="100" selected>Normal</option>
+                <option value="80">Hard</option>
+                <option value="60">Extreme</option>
+            </select>
+        </label>
+    </div>
+    <div class="info">Use arrow keys to move. Press Space to pause/resume. Swipe on mobile.</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
